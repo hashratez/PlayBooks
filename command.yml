@@ -1,6 +1,7 @@
-
 ---
 - hosts: all
+ 
+  tasks:
 
-- name: Send Command
-  command: hostname
+  - name: Get Hostname
+    command: hostname
