@@ -7,7 +7,7 @@
   tasks:
 
   - name: Update APT package cache
-    apt: update_cache=yes cache_valid_time=6000
+    apt: update_cache=no cache_valid_time=6000
 
   - name: Upgrade APT to the latest packages
     apt: upgrade=dist
