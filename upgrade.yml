@@ -5,6 +5,3 @@
 
   - name: Update
     command: update
-    
-   -name: Upgrade
-    command: upgrade
