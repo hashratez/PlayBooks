@@ -1,0 +1,14 @@
+---
+- hosts: all
+  environment:
+    LC_ALL: C
+    LANG: C
+
+  tasks:
+
+  - name: Update APT package cache
+    apt: update_cache=yes cache_valid_time=600
+
+  - name: Upgrade APT to the latest packages
+    apt: upgrade=dist
+    register: apt_result
