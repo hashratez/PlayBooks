@@ -5,7 +5,7 @@
 
   - name: Update APT package cache
     apt: update=dist
-     register: apt_result
+    register: apt_result
 
 
   - name: Upgrade APT to the latest packages
